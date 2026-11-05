@@ -1,5 +1,5 @@
 /* =====================================
-   1. 全局设置：颜色、字体和基本规则
+   1. all
    ===================================== */
 
 :root {
@@ -51,7 +51,7 @@ button {
 
 
 /* =====================================
-   2. 顶部导航栏
+   2. top
    ===================================== */
 
 .site-header {
@@ -111,7 +111,7 @@ footer a:hover {
 
 
 /* =====================================
-   3. 首页 Hero 区域
+   3. Hero 
    ===================================== */
 
 .hero {
@@ -219,7 +219,7 @@ footer {
 
 
 /* =====================================
-   4. 所有主要内容区域的共同样式
+   4. context
    ===================================== */
 
 .content-section {
@@ -249,7 +249,7 @@ h2 span {
 
 
 /* =====================================
-   5. About Me 区域
+   5. About Me 
    ===================================== */
 
 .about-layout {
@@ -364,7 +364,7 @@ h2 span {
 
 
 /* =====================================
-   6. Interests 标题区域
+   6. Interests 
    ===================================== */
 
 .interest-heading {
@@ -382,7 +382,7 @@ h2 span {
 
 
 /* =====================================
-   7. 四张兴趣卡片的网格布局
+   7. interest
    ===================================== */
 
 .interest-grid {
@@ -399,7 +399,7 @@ h2 span {
 
 
 /* =====================================
-   8. 每张兴趣卡片的共同样式
+   8. style
    ===================================== */
 
 .interest-card {
@@ -431,7 +431,7 @@ h2 span {
 }
 
 
-/* 卡片背景层 */
+/* bg */
 
 .interest-card::before {
     content: "";
@@ -450,7 +450,7 @@ h2 span {
 }
 
 
-/* Photography 背景 */
+/* Photography  */
 
 .photography::before {
     background:
@@ -463,7 +463,7 @@ h2 span {
 }
 
 
-/* Music 背景 */
+/* Music  */
 
 .music::before {
     background:
@@ -476,7 +476,7 @@ h2 span {
 }
 
 
-/* Football 背景 */
+/* Football  */
 
 .football::before {
     background:
@@ -489,7 +489,7 @@ h2 span {
 }
 
 
-/* Travel 背景 */
+/* Travel  */
 
 .travel::before {
     background:
@@ -503,7 +503,7 @@ h2 span {
 
 
 /* =====================================
-   9. 卡片内部的文字和符号
+   9. card inside
    ===================================== */
 
 .card-top {
@@ -557,7 +557,7 @@ h2 span {
 
 
 /* =====================================
-   10. 点击后才显示的详细介绍
+   10. click
    ===================================== */
 
 .interest-detail {
@@ -588,7 +588,7 @@ h2 span {
 }
 
 
-/* 鼠标放在卡片上时 */
+/*  */
 
 .interest-card:hover {
     border-color: #727c61;
@@ -601,7 +601,7 @@ h2 span {
 
 
 /* =====================================
-   11. 点击卡片后的展开、模糊效果
+   11. show 
    ===================================== */
 
 .interest-grid.has-active {
@@ -609,7 +609,7 @@ h2 span {
 }
 
 
-/* 没有被选中的卡片 */
+/*  */
 
 .interest-grid.has-active .interest-card:not(.is-active) {
     filter: blur(2px) brightness(.35);
@@ -618,7 +618,7 @@ h2 span {
 }
 
 
-/* 被选中的卡片 */
+/*  */
 
 .interest-grid.has-active .interest-card.is-active {
     grid-column: 1 / -1;
@@ -635,7 +635,7 @@ h2 span {
 }
 
 
-/* 只显示当前选中卡片的详细文字 */
+/*  */
 
 .interest-grid.has-active .interest-card.is-active .interest-detail {
     display: block;
@@ -647,7 +647,7 @@ h2 span {
 
 
 /* =====================================
-   12. Interests 底部提示文字
+   12. Interests 
    ===================================== */
 
 .interest-footer {
@@ -666,7 +666,7 @@ h2 span {
 
 
 /* =====================================
-   13. Weekly Reflections 区域
+   13. Weekly Reflections 
    ===================================== */
 
 .reflections-section h2 {
@@ -751,9 +751,32 @@ h2 span {
     font-size: 42px;
     cursor: pointer;
 }
+.week5-content {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 20px;
+    align-items: start;
+}
 
+.week5-content > p {
+    margin: 0;
+    color: #c0c4ba;
+}
+
+.week5-content > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+@media (max-width: 760px) {
+    .week5-content {
+        grid-template-columns: 1fr;
+    }
+}
 /* =====================================
-   14. 页面底部
+   14. bottom
    ===================================== */
 
 footer {
@@ -776,7 +799,7 @@ footer a {
 
 
 /* =====================================
-   15. 展开时的文字动画
+   15. move-kai
    ===================================== */
 
 @keyframes reveal {
@@ -793,7 +816,7 @@ footer a {
 
 
 /* =====================================
-   16. 平板和较小屏幕的布局
+   16. screen
    ===================================== */
 
 @media (max-width: 760px) {
@@ -866,7 +889,7 @@ footer a {
 
 
 /* =====================================
-   17. 手机屏幕的布局
+   17. screen small
    ===================================== */
 
 @media (max-width: 480px) {
@@ -922,7 +945,7 @@ footer a {
 
 
 /* =====================================
-   18. 尊重用户的减少动画设置
+   18. add
    ===================================== */
 
 @media (prefers-reduced-motion: reduce) {
