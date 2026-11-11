@@ -775,6 +775,31 @@ h2 span {
         grid-template-columns: 1fr;
     }
 }
+
+.week6-content {
+    min-width: 0;
+}
+
+.week6-content > p {
+    margin: 0 0 20px;
+    color: #c0c4ba;
+}
+
+.week6-images {
+    display: grid;
+    grid-template-columns: repeat(2, calc(40% - 8px));
+    gap: 16px;
+    align-items: start;
+}
+
+.week6-images > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+}
+
 /* =====================================
    14. bottom
    ===================================== */
